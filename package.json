@@ -1,0 +1,20 @@
+{
+  "name": "portfoliov1",
+  "version": "1.0.0",
+  "description": "\"# Portfolio-v1\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "author": "Sean Teodosio",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
