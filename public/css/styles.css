@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.blank{
+    height: 1000px;
+}
+
+.custnav{
+    height: 180px;
+    background: linear-gradient(to right, rgb(58, 50, 136) , 
+    rgb(86, 32, 94), rgb(128, 55, 93));
+}
+@keyframes navfade{
+    100%{
+        opacity: 1;
+    }
+}
+.custnav a {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color:white !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    transition: border .3s ease-in;
+    opacity: 0;
+    animation: .8s navfade 1s forwards;
+}
+.custnav a:hover {
+    opacity: .75;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.76);
+}
+.grad {
+    background: linear-gradient(to right, rgb(58, 50, 136) , 
+    rgb(86, 32, 94), rgb(128, 55, 93));
+    width: 100%;
+    height: 580px;
+  }
+  @media screen and (max-width:529px) {
+    .grad {
+        background: linear-gradient(to right, rgb(58, 50, 136) , 
+        rgb(86, 32, 94), rgb(128, 55, 93));
+        width: 100%;
+        height: 650px;
+      }
+
+  }
+.grad h1{
+    color: rgb(199, 97, 114);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom:20px;
+    font-weight: 100;
+    font-size: 70px;
+    opacity: 0;
+    animation: .8s navfade .5s forwards;
+    z-index:-1;
+}
+.grad p{
+    text-align: center;
+    margin: 0;  
+}
+.icons{  
+    font-size: 50px;
+    color: white;
+    opacity: 0;
+    animation: .7s navfade .6s forwards;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+    
+}
+.icons a:hover{
+    text-decoration: none;
+    color: white;
+    
+}
+.description{
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: .5s navfade .7s forwards;
+}
+.descriptioncolor{
+    color:rgb(199, 97, 114)
+}
+button:active {
+    outline: 1px solid red;
+    outline-offset: -4px;
+}
+.custbutton{
+    margin-top:60px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation: .6s navfade .8s forwards;
+}
+.contactme{
+    font-weight: bold;
+    background-color: aliceblue;
+    margin: 0px auto;
+    padding: 10px 30px;
+    border-radius: 25px;
+    cursor: pointer; 
+    text-align: center;
+    outline: none;
+    border: none;
+    color: inherit;
+    opacity: 0;
+    animation: .8s navfade 1s forwards;
+
+}
+.servicesection{ 
+    padding-top: 100px;
+    padding-bottom: 120px;
+    background-color: rgb(238, 238, 238);
+    font-family: 'Roboto', sans-serif !important;
+}
+.servicestitle h1{
+    padding-bottom: 10px;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    opacity: 0;
+    animation: .8s fadeup .5s forwards;
+}
+.servicestitle p{
+    padding-bottom: 40px;
+    text-align: center;
+    opacity: 0;
+    animation: .8s fadeup .5s forwards;
+}
+
+@keyframes fadeup {
+    0%{
+        transform: translate(0, 100px);
+        opacity: 0;
+    }
+    70%{
+        opacity: .5;
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+.servicesgrid{
+    display: grid;
+    grid-template-columns:15% 1fr 1fr 1fr 15%;
+    grid-gap: .5em;
+}
+.service{
+    color:black;
+    margin: 0 20px;
+    padding: 20px 10px;
+    text-align: center;
+    opacity: 0;
+    animation: .8s navfade .5s forwards;
+}
+.service h3{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+@media screen and (max-width: 1000px) {
+    .servicesgrid{
+        display: inline;
+        text-align: center;
+    }
+    .service{
+        margin: 0 auto;
+        text-align: center;
+        width: 360px;
+    }
+
+  }
+  /* @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px){
+    .servicesgrid{
+        display: inline;
+        text-align: center;
+    }
+    .service{
+        margin: 0 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+  } */
+
+  .projecttitle h1{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    opacity: 0;
+    animation: .8s fadeup .7s forwards;
+}
+.projectgrid{
+    display:grid;
+    grid-template-columns: 25% 1fr 1fr 1fr 25%;
+    
+}
+.project{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: .8s navfade .5s forwards;
+}
+@media screen and (max-width: 1450px) {
+    .projectgrid{
+        display:grid;
+        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    }
+
+  }
+@media screen and (max-width: 750px) {
+    .projectgrid{
+        display:inline;
+
+    }
+
+  }
+  .aboutsection{
+    background-color: rgb(238, 238, 238);
+    padding-bottom: 50px;
+
+  }
+  .aboutgrid{
+      display: grid;
+      grid-template-columns: 15% 25% 45% 15%;
+  }
+  .about{
+    font-family: 'Roboto', sans-serif !important;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  .selfie{
+      width: 100%;
+      margin: 0 auto;
+  }
+  
+  .selfie img{
+    transform: scale(.5);
+    border-radius: 50%;
+  }
+  @media screen and (max-width: 1400px) {
+    .selfie img{
+        height: 300px;
+    }
+    .aboutgrid{
+        display:inline;
+    }
+    .selfie{
+        padding-top: 0px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 200px;
+    }
+    div.about{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 750px) {
+    .aboutgrid{
+        display:inline;
+    }
+}
+.custcontact{
+    background-color: rgb(88, 85, 122) ;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+footer{
+    background-color: rgb(26, 26, 26);
+    color: white;
+
+}
+.card-body{
+    text-align: center;
+}
+.floorgradient{
+    background: linear-gradient( rgb(88, 85, 122), rgb(26, 26, 26));
+    height: 150px;
+}
