@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="custnav">
+    <nav class="custnav" id="home">
         <ul class="nav sticky-top justify-content-center">
             <li class="nav-item">
                 <a class="nav-link active" href="/">Home</a>
@@ -56,6 +56,24 @@
             </div>
         </div>
     </header>
+        <!-- SECOND NAV================================================================================== -->
+    <nav class="navbar navbar-default fixed-top fadenav justify-content-center ">
+        <ul class="nav sticky-top justify-content-center">
+            <li class="nav-item">
+               <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link scroll1" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+             </li>
+           <li class="nav-item">
+                   <a class="nav-link" href="#about">About</a>
+             </li>
+            </ul>
+     </nav>
+        <!-- SECOND NAV END================================================================================== -->        
     <section class="servicesection" id="services">
         <div class="servicestitle">
             <h1>
@@ -342,6 +360,31 @@
         }
         }
     });
+
+
+//Navbar Fade
+(function ($) {
+    $(document).ready(function(){
+      
+      // hide .navbar first
+      $(".navbar").hide();
+      
+      // fade in .navbar
+      $(function () {
+          $(window).scroll(function () {
+              // set distance user needs to scroll before we fadeIn navbar
+              if ($(this).scrollTop() >200) {
+                  $('.navbar').fadeIn();
+              } else {
+                  $('.navbar').fadeOut();
+              }
+          });
+  
+      
+      });
+  
+  });
+    }(jQuery));
 </script>
 
 </body>
