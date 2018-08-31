@@ -300,7 +300,8 @@ and (max-device-width : 667px){
     }
 }
 .custcontact{
-    background-color: rgb(88, 85, 122) ;
+    background: linear-gradient(to right, rgb(58, 50, 136) , 
+    rgb(86, 32, 94), rgb(128, 55, 93));
     color: white;
     padding-top: 10px;
     padding-bottom: 40px;
@@ -311,7 +312,7 @@ and (max-device-width : 667px){
 }
 .floorgradient{
     background: linear-gradient( rgb(88, 85, 122),  rgb(86, 32, 94));
-    height: 150px;
+    height: 50px;
 }
 footer{
     padding-bottom: 10px;
