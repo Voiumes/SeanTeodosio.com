@@ -135,6 +135,7 @@ button:active {
     animation: .8s navfade 1s forwards;
 
 }
+
 .servicesection{ 
     padding-top: 100px;
     padding-bottom: 120px;
@@ -225,7 +226,8 @@ and (max-device-width : 667px){
 }
 .projectgrid{
     display:grid;
-    grid-template-columns: 25% 1fr 1fr 1fr 25%;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 2em;
     
 }
 .project{
@@ -237,15 +239,19 @@ and (max-device-width : 667px){
 @media screen and (max-width: 1450px) {
     .projectgrid{
         display:grid;
-        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+        grid-template-columns: 1fr 1fr 1fr ;
     }
 
   }
 @media screen and (max-width: 750px) {
     .projectgrid{
         display:inline;
-
+        
     }
+    .projectgrid div{
+        margin: 20px auto;
+    }
+    
 
   }
   .aboutsection{
@@ -319,4 +325,69 @@ footer{
     background: linear-gradient( rgb(86, 32, 94),  rgb(57, 20, 63));
     color: white;
 
+}
+
+
+/* Project Buttons */
+
+
+
+.modalgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+.projectred{
+    background-color: rgb(236, 125, 125);
+}
+.projectgreen{
+    background-color: rgb(125, 228, 125);
+}
+.projectblue{
+    background-color: rgb(91, 91, 253);
+}
+.modalimg{
+    width: 100%;
+    height: 100%;
+}
+.project1{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.button{
+    position: relative;
+}
+.button img{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.button:hover img{
+    opacity: .5;
+}
+.button i {
+    position: absolute;
+    padding-left: 13px;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    font-size: 34px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #ffffff;
+    color:rgba(0, 0, 0, 0.603);
+    z-index: 2;
+  }
+  .fa-search {
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  .button:hover i {
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms 00ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+.viewproject{
+    margin-top: 20px;
 }
