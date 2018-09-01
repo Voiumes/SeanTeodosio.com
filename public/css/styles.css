@@ -38,15 +38,15 @@
     text-align: center;
 }
 .fadenav a {
-    font-size: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
     color:white !important;
     border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 .fadenav a:hover {
-    opacity: .75;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.76);
+    opacity: .9;
+
 }
 .grad {
     background: linear-gradient(to right, rgb(58, 50, 136) , 
