@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-.blank{
-    height: 1000px;
-}
 
 .custnav{
     height: 180px;
@@ -52,30 +49,15 @@
     background: linear-gradient(to right, rgb(58, 50, 136) , 
     rgb(86, 32, 94), rgb(128, 55, 93));
     width: 100%;
-    height: 580px;
+    height: 790px;
   }
-  @media screen and (max-width:529px) {
-    .grad {
-        background: linear-gradient(to right, rgb(58, 50, 136) , 
-        rgb(86, 32, 94), rgb(128, 55, 93));
-        width: 100%;
-        height: 650px;
-      }
-      .fadenav a {
-        font-size: 18px;
-        padding-left: 10px;
-        padding-right: 10px;
-        color:white !important;
-        border-bottom: 2px solid rgba(255, 255, 255, 0);
-    }
 
-  }
 .grad h1{
     color: rgb(199, 97, 114);
     text-transform: uppercase;
     text-align: center;
     padding-top: 0px;
-    padding-bottom:20px;
+    padding-bottom:50px;
     font-weight: 100;
     font-size: 70px;
     opacity: 0;
@@ -87,6 +69,7 @@
     margin: 0;  
 }
 .icons{  
+    padding-bottom: 50px;
     font-size: 50px;
     color: white;
     opacity: 0;
@@ -142,12 +125,55 @@ button:active {
     animation: .8s navfade 1s forwards;
 
 }
+@media screen and (max-width:529px) {
+    .custnav{
+        height: 70px;
+        background: linear-gradient(to right, rgb(58, 50, 136) , 
+        rgb(86, 32, 94), rgb(128, 55, 93));
+    }
+    .grad h1{
+        color: rgb(199, 97, 114);
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 100;
+        font-size: 70px;
+        opacity: 0;
+        animation: .8s navfade .5s forwards;
+        z-index:-1;
+    }
+    .grad {
+        background: linear-gradient(to right, rgb(58, 50, 136) , 
+        rgb(86, 32, 94), rgb(128, 55, 93));
+        width: 100%;
+        height: 650px;
+      }
+      .fadenav a {
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color:white !important;
+        border-bottom: 2px solid rgba(255, 255, 255, 0);
+    }
+    .description{
+        padding-top: 0px;
+        font-family: 'Roboto', sans-serif !important;
+        font-weight: 500;
+        font-size: 15px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        opacity: 0;
+        animation: .5s navfade .7s forwards;
+    }
+
+  }
 
 .servicesection{ 
-    padding-top: 100px;
-    padding-bottom: 120px;
-    background-color: rgb(238, 238, 238);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: rgba(238, 238, 238, 0.623);
     font-family: 'Roboto', sans-serif !important;
+    height: 975px;
 }
 .servicestitle h1{
     padding-bottom: 10px;
@@ -160,8 +186,9 @@ button:active {
 .servicestitle p{
     padding-bottom: 40px;
     text-align: center;
+    font-size: 1.2rem;
     opacity: 0;
-    animation: .8s fadeup .5s forwards;
+    animation: 1s fadeup .65s forwards;
 }
 
 @keyframes fadeup {
@@ -187,6 +214,7 @@ button:active {
     color:black;
     margin: 0 20px;
     padding: 20px 10px;
+    font-size: 1.2rem;
     text-align: center;
     opacity: 0;
     animation: .8s navfade .5s forwards;
@@ -196,6 +224,13 @@ button:active {
     padding-bottom: 10px;
 }
 @media screen and (max-width: 1000px) {
+    .servicesection{ 
+        padding-top: 50px;
+        padding-bottom: 100px;
+        background-color: rgba(238, 238, 238, 0.63);
+        font-family: 'Roboto', sans-serif !important;
+        height: 975px;
+    }
     .servicesgrid{
         display: inline;
         text-align: center;
@@ -207,20 +242,9 @@ button:active {
     }
 
   }
-  /* @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px){
-    .servicesgrid{
-        display: inline;
-        text-align: center;
-    }
-    .service{
-        margin: 0 20px;
-        text-align: center;
-        justify-content: center;
-    }
-
-  } */
+  .projectsection{
+      height: 975px;
+  }
 
   .projecttitle h1{
     padding-top: 80px;
@@ -234,7 +258,8 @@ and (max-device-width : 667px){
 .projectgrid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-gap: 2em;
+    grid-gap: 3em;
+  
     
 }
 .project{
@@ -264,6 +289,8 @@ and (max-device-width : 667px){
   .aboutsection{
     background-color: rgb(238, 238, 238);
     padding-bottom: 50px;
+    padding-top:100px;
+    height: 975px;
 
   }
   .aboutgrid{
@@ -272,6 +299,7 @@ and (max-device-width : 667px){
   }
   .about{
     font-family: 'Roboto', sans-serif !important;
+    font-size: 1.3rem;
     text-align: center;
     margin: 0 auto;
     padding-top: 100px;
@@ -328,9 +356,12 @@ and (max-device-width : 667px){
     height: 50px;
 }
 footer{
-    padding-bottom: 10px;
+    padding: 10px 0;
     background: linear-gradient( rgb(86, 32, 94),  rgb(57, 20, 63));
     color: white;
+    text-align: center;
+    font-size: .8rem;
+
 
 }
 
